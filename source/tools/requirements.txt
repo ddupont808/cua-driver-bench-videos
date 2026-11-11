@@ -1,0 +1,9 @@
+# Python 3.13
+playwright==1.55.0      # then: python -m playwright install chromium
+numpy==2.3.1
+scipy==1.15.3
+soundfile==0.13.1
+Pillow==12.2.0
+# ffmpeg 8.0 (libx264, aac) on PATH
+pandas   # only for tools/gen_numbers.py (with pyarrow)
+pyarrow

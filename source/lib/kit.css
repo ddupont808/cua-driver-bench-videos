@@ -1,0 +1,18 @@
+@font-face{font-family:Urbanist;font-weight:600;src:url(fonts/Urbanist-SemiBold.ttf) format("truetype")}
+@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(fonts/JetBrainsMono-Medium.ttf) format("truetype")}
+html,body{margin:0;overflow:hidden;background:#0b0e13}
+body{font-family:Urbanist,"Segoe UI",sans-serif}
+#stage{position:relative;width:var(--W);height:var(--H);overflow:hidden;background:var(--bg,#0b0e13);color:#f3f6fa;isolation:isolate}
+#stage>*{position:absolute}
+#layer{inset:0}
+#overlay{inset:0;pointer-events:none}
+.c3{position:absolute;left:50%;top:50%}
+.disp{font-family:Urbanist,sans-serif;font-weight:600;letter-spacing:-.03em;line-height:1.0;color:#f3f6fa}
+.mono{font-family:"JetBrains Mono",monospace;font-weight:500}
+.w{display:inline-block;will-change:transform,opacity}
+.win{border-radius:18px;overflow:hidden;background:#f3f6fa;color:#0f1a2a;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 100px rgba(0,0,0,.55),0 4px 14px rgba(0,0,0,.35);position:relative;font-family:Urbanist,sans-serif;font-weight:600}
+.win .tb{height:44px;display:flex;align-items:center;gap:9px;padding:0 16px;background:#e6ebf2;border-bottom:1px solid rgba(15,26,42,.08);font-size:18px;color:#4a5668}
+.win .dot{width:14px;height:14px;border-radius:50%}
+.win.inactive .tb{background:#dfe4ec}
+.win .body{position:relative}
+.chip{display:inline-flex;align-items:center;gap:12px;border-radius:999px;padding:10px 22px;font-family:Urbanist,sans-serif;font-weight:600;font-size:26px;background:#10161f;border:1.5px solid rgba(79,211,126,.5);color:#f3f6fa}
